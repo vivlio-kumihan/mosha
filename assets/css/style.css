@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+  color: #555;
+}
