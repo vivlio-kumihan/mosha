@@ -11,52 +11,60 @@
   <script src="./assets/js/behavior.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="logo">profile</div>
-    <div class="menu">
+  <header id="header" class="container">
+    <h1 class="site-title">
+      <a href="index.html">
+        <img src="./assets/img/logo.svg" alt="Profile">
+      </a>
+    </h1>
+    <nav>
       <ul>
-        <li><a href="#">about</a></li>
-        <li><a href="#">bicycle</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#bicycle">bicycle</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
   
   <main>
-    <div class="main-visual"></div>
+    <div id="main-visual"></div>
   
-    <div class="container">
-      <section class="about-me">
-        <h2>about</h2>
-        <article>
-          <img src="./assets/img/about.jpg" alt="プロフィール写真">
+    <section id="about" class="container">
+      <h2>about</h2>
+      <article>
+        <img src="./assets/img/about.jpg" alt="プロフィール写真">
+        <div class="texts">
+          <p class="author">nobuyuki takahiro</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="bicycle" class="container">
+      <h2>bicycle</h2>
+      <ul class="bicycle">
+        <li>
+          <img src="./assets/img/bicycle1.jpg" alt="自転車1">
           <div class="texts">
-            <p class="author">nobuyuki takahiro</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <h3>What is Lorem Ipsum?</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
-        </article>
-      </section>
-  
-      <section>
-        <h2>bicycle</h2>
-        <ul class="bicycle">
-          <li>
-            <img src="./assets/img/bicycle1.jpg" alt="自転車1">
+        </li>
+        <li>
+          <img src="./assets/img/bicycle2.jpg" alt="自転車2">
+          <div class="texts">
             <h3>What is Lorem Ipsum?</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </li>
-          <li>
-            <img src="./assets/img/bicycle2.jpg" alt="自転車2">
+          </div>
+        </li>
+        <li>
+          <img src="./assets/img/bicycle3.jpg" alt="自転車3">
+          <div class="texts">
             <h3>What is Lorem Ipsum?</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </li>
-          <li>
-            <img src="./assets/img/bicycle3.jpg" alt="自転車3">
-            <h3>What is Lorem Ipsum?</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </li>
-        </ul>
-      </section>
-    </div>
+          </div> 
+        </li>
+      </ul>
+    </section>
   </main>
   <footer>
     <small>

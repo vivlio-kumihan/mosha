@@ -10,55 +10,43 @@ body {
   color: #555;
 }
 
-header {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  max-width: 1000px;
-  height: 3.5rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  width: 80%;
   margin: 0 auto;
   padding: 0 2rem;
+  text-align: center;
 }
 
-header .logo {
-  padding: .2rem 1rem;
-  font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  text-transform: capitalize;
-  color: #fff;
-  background-color: #333;
+.site-title {
+  width: 7rem;
+  padding: 1rem 0;
 }
 
-header ul {
+#header ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: end;
 }
 
-header li {
+#header li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-transform: capitalize;
 }
 
-header li:not(:first-of-type) {
+#header li:not(:first-of-type) {
   margin-left: 2rem;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  width: 80%;
-  /* height: 100vh; */
-  margin: 0 auto;
-}
-
-.main-visual {
+#main-visual {
   width: 100%;
   height: calc(100vh - 10rem);
   background-image: url(../img/mainvisual.jpg);
@@ -67,14 +55,8 @@ header li:not(:first-of-type) {
   background-position: 50% 50%;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 h2 {
-  display: inline;
+  display: inline-block;
 
   margin: 4rem 0 3rem;
   font-size: 3rem;
@@ -85,20 +67,20 @@ h2 {
 }
 
 article {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.about-me img {
-  position: absolute;
-  top: 1rem;
-  left: 0;
+article img {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
 }
 
 .texts {
-  margin-left: 8rem;
+  margin-left: 3rem;
+  text-align: left;
 }
 
 .author {
@@ -108,15 +90,15 @@ article {
   text-transform: capitalize;
 }
 
-.bicycle {
+#bicycle ul {
   display: flex;
 }
 
-.bicycle li {
+#bicycle li {
   width: 33%;
 }
 
-.bicycle li:not(:first-of-type) {
+#bicycle li:not(:first-of-type) {
   margin-left: 1rem;
 }
 
@@ -124,11 +106,15 @@ img {
   width: 100%;
 }
 
-.bicycle h3 {
+#bicycle h3 {
   margin-top: 1rem;
   font-size: 1.2;
   font-weight: 700;
   text-align: center;
+}
+
+#bicycle .texts {
+  margin-left: 0;
 }
 
 footer {
